@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class emp
+{
+  public :
+  static int counter;
+   string name;
+   public:
+  emp(string n)
+  { name = n;
+    cout<<name<<endl;
+    counter++;
+    cout<<counter<<endl;
+  }
+};
+int emp::counter;
+int main()
+{   emp obj("chetan");
+    emp obj1("456");
+    return 0;
+}
